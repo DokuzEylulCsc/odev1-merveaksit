@@ -15,13 +15,13 @@
 <button type="button" id="buttonTopla">Topla</button> 
 <br><br>
         <script>
-            var button = document.getElementById("buttonTopla");
-            button.onclick = function(){
-                var sayi1 = Number(document.getElementById("id1").value);
-                var sayi2 = Number(document.getElementById("id2").value);
-                var toplam = sayi1+sayi2;
+        var button = document.getElementById("buttonTopla");
+        button.onclick = function(){
+        	var sayi1 = Number(document.getElementById("id1").value);
+        	var sayi2 = Number(document.getElementById("id2").value);
+        	var toplam = sayi1+sayi2;
                 alert(toplam);
-            }
+           	}
         </script>
 <label for="id3">Metin kutusu 3</label> 
 <input type='text' id='id3' />  
@@ -30,14 +30,14 @@
 <input type='text' id='id4' />  
 <br><br> 
 <button type="button" id="buttonYapistir">Yapıştır</button> 
-		<script>
-			var button = document.getElementById("buttonYapistir");
-			button.onclick = function(){
-				var metin1 = document.getElementById("id3").value;
-				var metin2 = document.getElementById("id4").value;
-				var metin3 = metin1.concat(" ",metin2);
-				alert(metin3);
-			}
+	<script>
+	var button = document.getElementById("buttonYapistir");
+	button.onclick = function(){
+		var metin1 = document.getElementById("id3").value;
+		var metin2 = document.getElementById("id4").value;
+		var metin3 = metin1.concat(" ",metin2);
+		alert(metin3);
+		}
         </script>
 </body> 
 </html> 
