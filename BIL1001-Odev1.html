@@ -1,21 +1,43 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h2>2019 Güz Döneminin ilk ödevi</h2>
-<label for="id1">Metin kutusu 1</label>
-<input type='text' id='id1' /> 
-<br>
-<label for="id2">Metin kutusu 2</label>
-<input type='text' id='id2' /> 
+<!DOCTYPE html> 
+<html> 
+<head>
+<title>Merve AKSIT - 2014280003</title>
+</head>
+<body> 
+<h1>MERVE AKSIT - 2014280003</h1>
+<h2>2019 GÃ¼z DÃ¶neminin ilk Ã¶devi</h2>
+<label for="id1">Metin kutusu 1</label> 
+<input type='text' id='id1' />  
+<br> 
+<label for="id2">Metin kutusu 2</label> 
+<input type='text' id='id2' />  
+<br><br> 
+<button type="button" id="buttonTopla">Topla</button> 
 <br><br>
-<button type="button">Topla</button>
-<br><br>
-<label for="id3">Metin kutusu 3</label>
-<input type='text' id='id3' /> 
-<br>
-<label for="id4">Metin kutusu 4</label>
-<input type='text' id='id4' /> 
-<br><br>
-<button type="button">Yapýþtýr</button>
-</body>
-</html>
+        <script>
+            var button = document.getElementById("buttonTopla");
+            button.onclick = function(){
+                var sayi1 = Number(document.getElementById("id1").value);
+                var sayi2 = Number(document.getElementById("id2").value);
+                var toplam = sayi1+sayi2;
+                alert(toplam);
+            }
+        </script>
+<label for="id3">Metin kutusu 3</label> 
+<input type='text' id='id3' />  
+<br> 
+<label for="id4">Metin kutusu 4</label> 
+<input type='text' id='id4' />  
+<br><br> 
+<button type="button" id="buttonYapistir">YapÄ±ÅŸtÄ±r</button> 
+		<script>
+			var button = document.getElementById("buttonYapistir");
+			button.onclick = function(){
+				var metin1 = document.getElementById("id3").value;
+				var metin2 = document.getElementById("id4").value;
+				var metin3 = metin1.concat(" ",metin2);
+				alert(metin3);
+			}
+        </script>
+</body> 
+</html> 
